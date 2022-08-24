@@ -33,7 +33,7 @@
                         <input type="text" class="form-control" name="name" placeholder="name">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <span class="fas fa-user"></span>
                             </div>
                         </div>
                     </div>
@@ -53,6 +53,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="input-group mb-3">
+                        <select name="role" class="form-control">
+                            <option value="">-- Pilih Role --</option>
+                            <option value="Surat Masuk">admin</option>
+                            <option value="Surat Keluar">user</option>
+                        </select>
+                    </div>
+
                     <div class="row">
                         <div class="col-8">
                             <div class="icheck-primary">
