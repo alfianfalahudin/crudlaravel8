@@ -53,13 +53,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
+
+                    {{-- <div class="input-group mb-3">
                         <select name="role" class="form-control">
                             <option value="">-- Pilih Role --</option>
-                            <option value="Surat Masuk">admin</option>
-                            <option value="Surat Keluar">user</option>
+                            <option value="admin">admin</option>
+                            <option value="user">user</option>
                         </select>
-                    </div>
+                    </div> --}}
 
                     <div class="row">
                         <div class="col-8">
