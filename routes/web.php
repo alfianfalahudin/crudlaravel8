@@ -25,10 +25,10 @@ Route::get('/', function () {
 })->middleware('auth');
 
 Route::group(['middleware' => ['auth', 'hakakses:admin']], function () {
-    Route::get('/pegawai', [EmployeController::class, 'index'])->name('pegawai')->middleware('auth');
+
 });
 
-
+Route::get('/pegawai', [EmployeController::class, 'index'])->name('pegawai')->middleware('auth');
 
 Route::get('/tambahpegawai', [EmployeController::class, 'tambahpegawai'])->name('tambahpegawai');
 Route::post('/insertdata', [EmployeController::class, 'insertdata'])->name('insertdata');
