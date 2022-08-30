@@ -24,13 +24,13 @@ class EmployeController extends Controller
             Session::put('halaman_url', request()->fullUrl());
         }
 
-        return view('datapegawai', compact('data'));
+        return view('employee.datapegawai', compact('data'));
     }
 
     public function tambahpegawai()
     {
         $dataagama = Religion::all();
-        return view('tambahdata', compact('dataagama'));
+        return view('employee.tambahdata', compact('dataagama'));
     }
 
     public function insertdata(Request $request)
@@ -54,7 +54,7 @@ class EmployeController extends Controller
         $data = Employe::find($id);
         //dd($data);
 
-        return view('tampildata', compact('data'));
+        return view('employee.tampildata', compact('data'));
     }
 
     public function updatedata(Request $request, $id)
@@ -88,7 +88,7 @@ class EmployeController extends Controller
     public function exportpdf()
     {
         $data = Employe::get();
-        return view('datapegawai-pdf', compact('data'));
+        return view('employee.datapegawai-pdf', compact('data'));
     }
 
     public function exportexcel()
